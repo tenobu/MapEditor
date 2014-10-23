@@ -14,6 +14,11 @@
 		0719755B19F88A81002A8AC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0719755A19F88A81002A8AC4 /* Images.xcassets */; };
 		0719755E19F88A81002A8AC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0719755C19F88A81002A8AC4 /* LaunchScreen.xib */; };
 		0719756A19F88A81002A8AC4 /* MapEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0719756919F88A81002A8AC4 /* MapEditorTests.m */; };
+		0719757419F88B97002A8AC4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0719757319F88B97002A8AC4 /* MapKit.framework */; };
+		07A6C8AC19F8C91200CE89CE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A6C8AB19F8C91200CE89CE /* MapViewController.m */; };
+		07A6C8B219F8E2A100CE89CE /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A6C8B119F8E2A100CE89CE /* CustomAnnotation.m */; };
+		07A6C8B519F8E71F00CE89CE /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A6C8B419F8E71F00CE89CE /* CustomAnnotationView.m */; };
+		07A6C8B819F8E7D600CE89CE /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A6C8B719F8E7D600CE89CE /* maps.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		0719756319F88A81002A8AC4 /* MapEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0719756819F88A81002A8AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0719756919F88A81002A8AC4 /* MapEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapEditorTests.m; sourceTree = "<group>"; };
+		0719757319F88B97002A8AC4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		07A6C8AA19F8C91200CE89CE /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		07A6C8AB19F8C91200CE89CE /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		07A6C8B019F8E2A100CE89CE /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		07A6C8B119F8E2A100CE89CE /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		07A6C8B319F8E71F00CE89CE /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
+		07A6C8B419F8E71F00CE89CE /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		07A6C8B719F8E7D600CE89CE /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0719757419F88B97002A8AC4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 		0719754119F88A80002A8AC4 = {
 			isa = PBXGroup;
 			children = (
+				0719757319F88B97002A8AC4 /* MapKit.framework */,
 				0719754C19F88A81002A8AC4 /* MapEditor */,
 				0719756619F88A81002A8AC4 /* MapEditorTests */,
 				0719754B19F88A81002A8AC4 /* Products */,
@@ -81,13 +96,20 @@
 		0719754C19F88A81002A8AC4 /* MapEditor */ = {
 			isa = PBXGroup;
 			children = (
+				0719755C19F88A81002A8AC4 /* LaunchScreen.xib */,
+				0719755719F88A81002A8AC4 /* Main.storyboard */,
 				0719755119F88A81002A8AC4 /* AppDelegate.h */,
 				0719755219F88A81002A8AC4 /* AppDelegate.m */,
+				07A6C8AA19F8C91200CE89CE /* MapViewController.h */,
+				07A6C8AB19F8C91200CE89CE /* MapViewController.m */,
+				07A6C8B019F8E2A100CE89CE /* CustomAnnotation.h */,
+				07A6C8B119F8E2A100CE89CE /* CustomAnnotation.m */,
+				07A6C8B319F8E71F00CE89CE /* CustomAnnotationView.h */,
+				07A6C8B419F8E71F00CE89CE /* CustomAnnotationView.m */,
 				0719755419F88A81002A8AC4 /* ViewController.h */,
 				0719755519F88A81002A8AC4 /* ViewController.m */,
-				0719755719F88A81002A8AC4 /* Main.storyboard */,
 				0719755A19F88A81002A8AC4 /* Images.xcassets */,
-				0719755C19F88A81002A8AC4 /* LaunchScreen.xib */,
+				07A6C8B619F8E7D500CE89CE /* Images */,
 				0719754D19F88A81002A8AC4 /* Supporting Files */,
 			);
 			path = MapEditor;
@@ -117,6 +139,14 @@
 				0719756819F88A81002A8AC4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07A6C8B619F8E7D500CE89CE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				07A6C8B719F8E7D600CE89CE /* maps.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A6C8B819F8E7D600CE89CE /* maps.png in Resources */,
 				0719755919F88A81002A8AC4 /* Main.storyboard in Resources */,
 				0719755E19F88A81002A8AC4 /* LaunchScreen.xib in Resources */,
 				0719755B19F88A81002A8AC4 /* Images.xcassets in Resources */,
@@ -219,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A6C8B519F8E71F00CE89CE /* CustomAnnotationView.m in Sources */,
+				07A6C8B219F8E2A100CE89CE /* CustomAnnotation.m in Sources */,
 				0719755619F88A81002A8AC4 /* ViewController.m in Sources */,
 				0719755319F88A81002A8AC4 /* AppDelegate.m in Sources */,
 				0719755019F88A81002A8AC4 /* main.m in Sources */,
+				07A6C8AC19F8C91200CE89CE /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +448,7 @@
 				0719756F19F88A81002A8AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0719757019F88A81002A8AC4 /* Build configuration list for PBXNativeTarget "MapEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +457,7 @@
 				0719757219F88A81002A8AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

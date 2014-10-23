@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  MapEditor
 //
 //  Created by ビザンコムマック０９ on 2014/10/23.
@@ -10,11 +10,10 @@
 
 #import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController < MKMapViewDelegate >
+@interface MapViewController : UIViewController < MKMapViewDelegate >
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @property (weak, nonatomic) IBOutlet UIButton *button_TokusimaJyou;
 
 @end
-
